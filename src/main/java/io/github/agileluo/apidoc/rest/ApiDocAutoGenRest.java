@@ -51,7 +51,7 @@ public class ApiDocAutoGenRest {
 		this.docs = result;
 	}
 	@RequestMapping("/apis")
-	@ApiMethod(name="api文档列表", desc="框架自动文档生成接口")
+	 @ApiMethod(name="api文档列表", desc="框架自动文档生成接口")
 	public  List<ApiDoc>  listDoc() throws Exception{
 		parseDoc();
 		return docs;
